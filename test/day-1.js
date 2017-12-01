@@ -57,8 +57,4 @@ describe('INVERSE CAPTCHA', function() {
 			value.should.equal(1136);
 		});
 	});
-
-
-
-
 });
