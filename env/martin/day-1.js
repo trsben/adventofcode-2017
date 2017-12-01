@@ -4,7 +4,7 @@
 	and find the sum of all digits that match the next digit in the list. The list
 	is circular, so the digit after the last digit is the first digit in the list.
 */
-export default function(sequence) {
+const captcha = function(sequence) {
 	var total = 0;
 
 	for(var i = 0; i < sequence.length; i++) {
@@ -25,3 +25,5 @@ export default function(sequence) {
 
 	return total;
 };
+
+module.exports = captcha;

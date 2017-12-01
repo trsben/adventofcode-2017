@@ -1,5 +1,13 @@
 import should from 'should';
-import captcha from '../app/day-1.js';
+
+var captcha;
+
+if (process.env.KEY) {
+	captcha = require('../env/' + process.env.KEY.toLowerCase() + '/day-1.js');
+}
+else {
+	throw "An environment was not provided";
+}
 
 describe('INVERSE CAPTCHA', function() {
 	describe('When passed a captcha of 1122', function() {
