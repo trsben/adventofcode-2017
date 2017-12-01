@@ -4,8 +4,8 @@
   "description": "Advent of Code 2017",
   "main": "tests/index.js",
   "scripts": {
-    "ben": "env KEY=BEN mocha --compilers js:babel-core/register",
-    "martin": "env KEY=MARTIN mocha --compilers js:babel-core/register"
+    "ben": "env KEY=BEN mocha --compilers js:babel-core/register || true",
+    "martin": "env KEY=MARTIN mocha --compilers js:babel-core/register || true"
   },
   "author": "Havas Lynx",
   "license": "ISC",
