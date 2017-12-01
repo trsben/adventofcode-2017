@@ -1,0 +1,15 @@
+{
+  "name": "adventofcode-2017",
+  "version": "1.0.0",
+  "description": "Advent of Code 2017",
+  "main": "tests/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Havas Lynx",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  }
+}
