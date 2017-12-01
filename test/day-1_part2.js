@@ -27,7 +27,7 @@ describe('INVERSE CAPTCHA - PART 2', function() {
 	});
 
 	describe('When passed a captcha of 123425', function() {
-		it('should return an answer of 0', function() {
+		it('should return an answer of 4', function() {
 			const value = captcha('123425');
 
 			value.should.equal(4);
@@ -35,7 +35,7 @@ describe('INVERSE CAPTCHA - PART 2', function() {
 	});
 
 	describe('When passed a captcha of 123123', function() {
-		it('should return an answer of 9', function() {
+		it('should return an answer of 12', function() {
 			const value = captcha('123123');
 
 			value.should.equal(12);
@@ -43,7 +43,7 @@ describe('INVERSE CAPTCHA - PART 2', function() {
 	});
 
 	describe('When passed a captcha of 12131415', function() {
-		it('should return an answer of 1393', function() {
+		it('should return an answer of 4', function() {
 			const value = captcha('12131415');
 
 			value.should.equal(4);
