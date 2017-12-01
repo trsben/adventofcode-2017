@@ -5,5 +5,23 @@
 	is circular, so the digit after the last digit is the first digit in the list.
 */
 export default function(sequence) {
-	return 1;
+	var total = 0;
+
+	for(var i = 0; i < sequence.length; i++) {
+		var index1 = i;
+		var index2 = 0;
+
+		if(index1+1 !== sequence.length) {
+			index2 = i + 1;
+		}
+
+		var compare1 = sequence[index1];
+		var compare2 = sequence[index2];
+
+		if(compare1 === compare2) {
+			total += Number(compare1);
+		}
+	}
+
+	return total;
 };
