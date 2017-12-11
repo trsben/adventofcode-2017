@@ -5,10 +5,18 @@ const checksumEvaluator = function(sheet) {
 
 	rows.forEach(row => {
 		// split row by spaces
-		row = row.split(' ');
+		let values = row.split(' ');
 
-		// calculate checksum
-		checksum += Math.max(...row) - Math.min(...row);
+		// find number that is divisable by another
+		checksum += values.reduce((total, value) => {
+			for (let i = 0; i < values.length; i++) {
+				if (value % values[i] == 0 && value !== values[i]) {
+					return total + (value / values[i]);
+				}
+			}
+
+			return total;
+		}, 0);
 	});
 
 	return checksum;
